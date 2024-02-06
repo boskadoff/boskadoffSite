@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- JQuery Come Here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Reusable Header -->
+    <!-- Tutorial Link: https://www.mackenziesoftware.com/2020/06/reuse-navigation-bar-on-multiple-pages.html -->
+    <div id="header-placeholder"></div>
+
+    <script>
+        $.get("/header.html", function (data) {
+            $("#header-placeholder").replaceWith(data);
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <!--Menu-->
+    <header>
+
+        <!-- Reusable Nav Bar -->
+        <div id="nav-placeholder"></div>
+
+        <script>
+            $.get("/navigation.html", function (data) {
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+
+    </header>
+
+    <div class="main-container">
+        <div class="readAreaFlexBox">
+            <div class="flexboxCenter">
+                <h1>
+                    El Bloggo ✏️
+                </h1>
+                <h2>
+                    
+                </h2>
+                <div class="post-shelf">
+                    <a post1="post" href="/" class="post" >
+                        Hello
+                        <!-- <img onload="true" alt="Post 1" src="/images/homeImg.png" loading="lazy" class="link-img" style="opacity: 1;"> -->
+                    </a>
+                    <a post1="post" href="/" class="post" >
+                        Hello
+                        <!-- <img onload="true" alt="Post 1" src="/images/homeImg.png" loading="lazy" class="link-img" style="opacity: 1;"> -->
+                    </a>
+                    <a post1="post" href="/" class="post" >
+                        Hello
+                        <!-- <img onload="true" alt="Post 1" src="/images/homeImg.png" loading="lazy" class="link-img" style="opacity: 1;"> -->
+                    </a>
+                </div>
+                <!-- <div class="post-shelf-box">
+                    <a post1="post" href="/" class="post-box" >
+                        Hello
+                        
+                    </a>
+                    <a post1="post" href="/" class="post-box" >
+                        Hello
+                        
+                    </a>
+                    <a post1="post" href="/" class="post-box" >
+                        Hello
+                        
+                    </a>
+                    
+                </div> -->
+            </div>
+           
+            
+        </div>
+        
+    </div>
+
+
+</body>
+
+</html>

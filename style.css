@@ -1,0 +1,289 @@
+/*All fonts*/
+* {
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    /* Fill screen */
+    margin: 0;
+    /*Stabilizes Background Color*/
+    background-color: blanchedalmond;
+    /* Scrolling */
+    overflow: auto;
+}
+
+/* Working on this right now */
+h1 {
+    font-weight: 700px;
+    color: #ad5858;
+    font-size: 100px;
+    margin: 0px;
+}
+
+/* Index Page h1 style, replace with .readAreaFlexBox h1 if want to revert */
+#intro {
+    font-weight: 1000px;
+    color: #ad5858;
+    font-size: 100px;
+    margin: 90px 10px 30px 10px;
+}
+
+.readAreaFlexBox h2 {
+    color: #423333;
+    font-size: 50px;
+    margin: 10px;
+}
+
+/* End Working */
+
+
+
+
+/* Hmm Button */
+#hmm:hover {
+    color: white;
+
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 7s ease infinite;
+    -z-animation: rainbow 7s ease infinite;
+    -o-animation: rainbow 7s ease infinite;
+    animation: rainbow 7s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+/* Hmm Button End */
+
+
+/*Menu bar*/
+header {
+    position: relative;
+    z-index: 899;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 30px 250px 0px 250px;
+}
+
+/*Sites Bar*/
+nav ul {
+    font-family: var(--anonPro);
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    text-transform: lowercase;
+    justify-content: space-evenly;
+    padding-inline-start: 0px;
+    /*delete*/
+
+}
+
+nav ul li a {
+    color: rgb(74, 37, 24);
+    margin-left: 14px;
+    /*margin-left: 25px;      <-- Spacing and design of menu*/
+    margin-right: 14px;
+    padding: 8px 12px;
+    /*delete*/
+    border-radius: 30px;
+    /* button rounding corners */
+
+}
+
+/* Menu Style */
+nav ul li a:hover {
+    background-color: rgb(107, 83, 83);
+    color: rgb(255, 83, 83);
+}
+
+.nav-links li,
+div li {
+    color: aliceblue;
+}
+
+.main-container {
+
+    color: rgb(26, 29, 38);
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+.readAreaFlexBox {
+    display: flex;
+    flex-direction: row;
+    /*padding: 0px 100px;*/
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flexBoxLeft {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexBoxRight {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flexBoxCenter {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+img {
+    max-width: 100%;
+    /* overflow-clip-margin: content-box;
+    overflow: clip; */
+}
+/* Menu Style End */
+
+/* Blog Flexbox Style */
+.post-shelf {
+    display: grid;
+    margin-top: 10px;
+    font-size: 15;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px 22px;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    margin-bottom: 20px;
+}
+
+.post {
+
+    border-radius: 19px;
+    aspect-ratio: 100/10;
+    display: block;
+    position: relative;
+    z-index: 2;
+    background: rgb(120, 255, 181);
+    color:#2b1de8;
+    text-align:left;
+    padding: 20px;
+}
+
+.post-shelf-box {
+    display: grid;
+    margin-top: 10px;
+    
+    font-size: 15;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px 22px;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+
+}
+
+.post-box {
+    border-radius: 19px;
+    aspect-ratio: 100/100;
+    display: block;
+    position: relative;
+    z-index: 2;
+    background: rgb(120, 255, 181);
+    color:#2b1de8;
+    text-align:left;
+    padding: 10px;
+}
+
+/*The favicon.ico is a folley, not real, change it later*/
