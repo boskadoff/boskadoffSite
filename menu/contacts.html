@@ -47,24 +47,38 @@
             <div class="flexboxCenter">
                 <h1>
                     Contacts?? 👀
+                    <br>
                 </h1>
                 <h2>
-                    
+
                 </h2>
-                <div class="feed">
-                    <a twitter="post" href="" class="post" >
+
+                <!-- Reusable Nav Bar -->
+                <div id="linksGallery-placeholder"></div>
+
+                <script>
+                    $.get("/elements/linksGallery/linksGallery.html", function (data) {
+                        $("#linksGallery-placeholder").replaceWith(data);
+                    });
+                </script>
+
+                <p>
+                    Sorry, I'm not sure when it became a game of tic tac toe.
+                </p>
+                <!-- <div class="feed">
+                    <a twitter="post" href="" class="post">
                         Twitter
-                        <!-- <img onload="true" alt="Post 1" src="/images/homeImg.png" loading="lazy" class="link-img" style="opacity: 1;"> -->
+                        
                     </a>
-                    <a youtube="post" href="/" class="post" >
+                    <a youtube="post" href="/" class="post">
                         Youtube
-                        <!-- <img onload="true" alt="Post 1" src="/images/homeImg.png" loading="lazy" class="link-img" style="opacity: 1;"> -->
+                        
                     </a>
-                    <a instagram="post" href="/" class="post" >
+                    <a instagram="post" href="/" class="post">
                         Instagram
-                        <!-- <img onload="true" alt="Post 1" src="/images/homeImg.png" loading="lazy" class="link-img" style="opacity: 1;"> -->
+                        
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

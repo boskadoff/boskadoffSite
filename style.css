@@ -18,10 +18,10 @@ body {
 
 /* Working on this right now */
 h1 {
-    font-weight: 700px;
+    font-weight: 300px;
     color: #ad5858;
-    font-size: 100px;
-    margin: 0px;
+    font-size: 50px;
+    margin: 0px 0px 30px 0px;
 }
 
 /* Index Page h1 style, replace with .readAreaFlexBox h1 if want to revert */
@@ -132,7 +132,7 @@ header {
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    padding: 30px 250px 0px 250px;
+    padding: 26px 250px 0px 250px;   /*Positoning of the Menu | 26px originally was 30px*/
 }
 
 /*Sites Bar*/
@@ -192,7 +192,7 @@ div li {
     /*padding: 0px 100px;*/
     justify-content: center;
     align-items: center;
-
+    user-select: none;
 }
 
 .flexBoxLeft {
@@ -233,7 +233,7 @@ img {
     display: grid;
     margin-top: 20px;
     font-size: 30px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-gap: 20px 22px;
     justify-content: center;
