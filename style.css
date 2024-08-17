@@ -5,6 +5,7 @@
     text-align: center;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 
 body {
@@ -13,7 +14,7 @@ body {
     /*Stabilizes Background Color*/
     background-color: blanchedalmond;
     /* Scrolling */
-    overflow: auto;
+    overflow: auto; /* Hide scrollbars */
 }
 
 /* Working on this right now */
@@ -287,3 +288,11 @@ img {
 } */
 
 /*The favicon.ico is a folley, not real, change it later*/
+
+/* No scrollbar */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* End no scrollbar */

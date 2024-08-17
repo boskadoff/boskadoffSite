@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css?family=Figtree:800|DM+Sans:400");
+
+@import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One|Azeret+Mono:400");
+
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+:root {
+  --text: hsla(247, 57%, 91%, 1);
+  --text_light: hsla(247, 57%, 91%, 0.9);
+  --text_dark: hsla(247, 57%, 91%, 0.5);
+  --background: rgb(20, 21, 20);
+  --background_dark: rgb(16, 16, 15);
+  /*   --background: #FEF4EB;
+  --background_dark: #FEF4EB; */
+  --primary: hsla(241, 25%, 50%, 1);
+  /*   --secondary: #FAC390; */
+  --secondary: hsla(247, 8%, 25%, 0.5);
+  --accent: rgb(100, 35, 251);
+  --outline: hsla(247, 5%, 36%, 1);
+  --alert: hsla(360, 60%, 55%, 1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h7 {
+  font-family: "Figtree";
+  font-weight: 800;
+  line-height: 1;
+  color: var(--text);
+}
+
+html {
+  font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 3.158rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+h4 {
+  font-size: 1.777rem;
+}
+
+h5 {
+  font-size: 1.333rem;
+  color: var(--text_light);
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--text_light);
+  line-height: 1.2rem;
+}
+
+h7 {
+  font-size: 7rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+p2 {
+  font-size: 0.8rem;
+}
+
+.green {
+  color: green;
+}
+
+p3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: "Azeret Mono";
+}
+
+span {
+  color: var(--text);
+}
+
+small {
+  font-size: 0.75rem;
+  color: var(--text);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto; /* Hide scrollbars */
+  /* padding: 1rem 1rem 2rem 1rem; */
+  font-family: "DM Sans";
+  font-weight: 400;
+  background-color: blanchedalmond;
+}
+
+/*gap between sections */
+screen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+svg {
+  fill: var(--text_dark);
+  height: 1lh;
+  width: 1lh;
+  cursor: pointer;
+}
+
+button {
+  color: var(--text);
+  /*padding: 0.9rem 1rem 0.9rem 1rem;*/
+  padding: 0;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.primary {
+  background-image: var(--img);
+  background-position: center;
+  background-size: cover;
+}
+
+.secondary {
+  background: var(--secondary);
+}
+
+/* text bottom left */
+.bottom-left {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+/* .circle {
+  position: relative;
+  padding: 0;
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+}
+ */
+/* .circle svg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+} */
+
+.muted {
+  color: var(--text_dark);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.alert {
+  color: var(--alert);
+}
+
+.active {
+  color: var(--primary);
+}
+
+.split {
+  width: 50%;
+}
+
+.center {
+  align-items: center;
+  align-self: center;
+}
+
+.bottom {
+  align-items: end;
+  align-self: end;
+}
+
+.rounded-img {
+  border-radius: 0.7rem;
+  align-self: center;
+}
+
+/* .align-right { 
+            align-self: flex-start; 
+        } 
+.align-left{ 
+            align-self: flex-start; 
+        }  */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.home-item {
+  cursor: pointer;
+  text-wrap: nowrap;
+  aspect-ratio: 1/1;
+}
+
+.linear-item {
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+
+  /*gap: 1rem;*/
+}
+
+.widget-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+div.column:nth-child(2) {
+  margin-top: 0rem;
+}
+
+/* glob {
+  opacity: 30%;
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+  filter: blur(100px);
+  background: var(--primary);
+  pointer-events: none;
+}
+
+#glob-1 {
+  background: var(--text_light);
+  right: 0;
+  top: 0;
+}
+
+#glob-2 {
+  right: 50;
+} */
+
+/* profile icon */
+/* .nav {
+  display: flex;
+  padding: 1rem 0rem 1rem 0rem;
+  bottom: 0;
+  position: sticky;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--primary);
+  margin: 0 -1rem 0 -1rem;
+  z-index: 10;
+  top: 0;
+  backdrop-filter: blur(10px);
+} */
+
+.nav:nth-child(1) {
+  top: 0;
+  justify-content: space-between;
+  padding: 1rem 1rem 0rem 1rem;
+  background: none;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  screen {
+    max-width: 40rem;
+  }
+}
+
+/* For the Music Thing */
+.playlist {
+  list-style: none;
+}
+
+.playlist li {
+  border-top: 2px solid hsla(247, 57%, 91%, 0.3);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.playlist li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.playlist li:last-child {
+  padding-bottom: 0;
+}
+
+.music-text {
+  margin-right: 15rem;
+}
+
+.img-music {
+  max-width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  margin-left: 0;
+}
+
+.widget-music {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  justify-content: space-between;
+
+  /*gap: 1rem;*/
+}
+
+.music-center {
+  align-items: center;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 4rem 12vw 7rem 12vw;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  gap: 8rem;
+  padding: 0rem 0rem 0rem 0rem;
+  text-wrap: nowrap;
+}
+
+.hero h1 {
+  width: 50%;
+}
+
+.hero h4 {
+  margin-bottom: 1rem;
+}
+
+.code-box {
+  padding: 3rem;
+  width: 100%;
+  border-radius: 1rem;
+  background: rgba(43, 44, 50, 0.3);
+  /*border: solid ;*/
+  /*box-shadow: 1rem 1rem 1rem 0rem rgba(0, 0, 0, 0.4);*/
+  text-wrap: wrap;
+}
+
+.code-box h3 {
+  margin-bottom: 1rem;
+}
+
+.code-box p {
+  color: rgba(var(--text), 0.8);
+}
+
+/*.xmark {
+  fill: rgba(var(--text), 1);
+  float: right;
+  width: 2.369rem;
+  height: 2.369rem;
+  cursor: pointer;
+} */
+
+h7 mark {
+  vertical-align: middle;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: rgba(var(20, 19, 22), 1);
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(var(200, 182, 255), 1),
+    rgba(var(187, 208, 255), 1)
+  );
+}
+
+
+/*Menu bar*/
+header {
+    position: relative;
+    z-index: 899;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 26px 250px 0px 250px;   /*Positoning of the Menu | 26px originally was 30px*/
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*Sites Bar*/
+nav ul {
+    font-family: var(--anonPro);
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    text-transform: lowercase;
+    justify-content: space-evenly;
+    padding-inline-start: 0px;
+    /*delete*/
+
+}
+
+nav ul li a {
+    color: rgb(74, 37, 24);
+    
+    margin-left: 14px;
+    /*margin-left: 25px;      <-- Spacing and design of menu*/
+    margin-right: 14px;
+    padding: 8px 12px;
+    /*delete*/
+    border-radius: 30px;
+    /* button rounding corners */
+
+}
+
+/* Menu Style */
+nav ul li a:hover{
+    background-color: rgb(107, 83, 83);
+    color: rgb(255, 83, 83);
+}
+
+
+.nav-links li,
+div li {
+    color: aliceblue;
+}
+
+
+/* Hmm Button */
+#hmm:hover {
+    color: white;
+
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 7s ease infinite;
+    -z-animation: rainbow 7s ease infinite;
+    -o-animation: rainbow 7s ease infinite;
+    animation: rainbow 7s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-moz-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@-o-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+/* Hmm Button End */
+/* 
+Duck Words */
+
+.main-container {
+
+    color: rgb(26, 29, 38);
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* Fill screen */
+    margin: 0;
+
+
+}
+
+.readAreaFlexBox {
+    display: flex;
+    flex-direction: row;
+    /*padding: 0px 100px;*/
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.flexBoxCenter {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.main-container h1{
+    font-weight: 300px;
+    color: #ad5858;
+    font-size: 50px;
+    margin: 10px 0px 30px 0px;
+    font-family: 'Lexend Deca', sans-serif;;
+
+}
+
+
+/* End duck words */
+
