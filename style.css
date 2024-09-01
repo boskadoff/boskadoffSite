@@ -8,11 +8,15 @@
     
 }
 
+::selection {
+    background: red;
+  }
+
 body {
     /* Fill screen */
     margin: 0;
     /*Stabilizes Background Color*/
-    background-color: blanchedalmond;
+    background-color: #ffebcd;
     /* Scrolling */
     overflow: auto; /* Hide scrollbars */
 }
@@ -296,3 +300,175 @@ img {
 }
 
 /* End no scrollbar */
+
+/* For blog section */
+.bento-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.bento-box-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    max-width: 60rem;
+    margin: 20px;
+}
+
+.card {
+    background-color: white; /* This will be overridden by JS */
+    border-radius: 1.3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    transition: transform 0.2s;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.card p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: grey;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Make the cards responsive and flexible */
+.card:nth-child(2n) {
+    grid-column: span 1;
+}
+
+.card:nth-child(3n) {
+    grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+    .bento-box-blog {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 15px;
+    }
+
+    .card:nth-child(2n), .card:nth-child(3n) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .bento-box-blog {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* End blog Section */
+
+/* Portlfio section */
+
+.portfolio-display .button {
+    display: inline-block;
+    padding: 0.5em 1.0em;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    margin: 10px;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+  }
+  
+  .portfolio-display .button:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  .portfolio-display .button:active {
+    background-color: rgba(0,0,0,0.1);
+    outline: none;
+  }
+  
+  .portfolio-display .button-group {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .portfolio-display .button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .portfolio-display .article
+  {
+    background: blue;
+  }
+  
+  
+  .portfolio-display img {
+    vertical-align: middle;
+      border-radius: 1rem;
+    
+  }
+  
+  .portfolio-display .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  
+  }
+  
+  .portfolio-display .grid article {
+   
+    display: block;
+    float: left;
+    margin: 1%;
+    width: 23%;
+  }
+  
+  @media (max-width: 1024px) {
+    .grid article {
+      width: 31.3%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .grid article {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    .grid article {
+      margin: 2% 0;
+      width: 100%;
+    }
+  }
+
+  /* End portfoliof sention */

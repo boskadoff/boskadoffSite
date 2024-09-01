@@ -20,12 +20,19 @@
   --alert: hsla(360, 60%, 55%, 1);
 }
 
+::selection {
+  background: rgb(246, 69, 113);
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   text-decoration: none;
 }
+
+
 
 h1,
 h2,
@@ -93,7 +100,7 @@ p3 {
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.4;
-  font-family: "Azeret Mono";
+  font-family: "Figtree";
 }
 
 span {
@@ -376,7 +383,7 @@ div.column:nth-child(2) {
   display: flex;
   flex-direction: column;
   gap: 7rem;
-  padding: 4rem 12vw 7rem 12vw;
+  padding: 2rem 12vw 7rem 12vw;
 }
 
 .hero {
@@ -404,6 +411,21 @@ div.column:nth-child(2) {
   /*box-shadow: 1rem 1rem 1rem 0rem rgba(0, 0, 0, 0.4);*/
   text-wrap: wrap;
 }
+
+.code-box-clear {
+    font-family: "Figtree";
+    padding: 0rem;
+    border-color: rgb(205, 205, 205);
+    width: 100%;
+    border-radius: 1rem;
+    background: none;
+    /* border: dashed ; */
+    /*box-shadow: 1rem 1rem 1rem 0rem rgba(0, 0, 0, 0.4);*/
+    text-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+
+  }
 
 .code-box h3 {
   margin-bottom: 1rem;
