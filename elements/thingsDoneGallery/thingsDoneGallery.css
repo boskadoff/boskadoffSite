@@ -1,29 +1,41 @@
+.portfolio-h1 {
+  font-weight: 300px;
+  color: #ad5858;
+  font-size: 50px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
 .portfolio-display .button {
   display: inline-block;
   padding: 0.5em 1.0em;
   border-radius: 4px;
-  background: #ffffff;
+  /* background: #ffffff; */
   font-family: sans-serif;
   font-size: 16px;
   cursor: pointer;
   border: 1px solid #000000;
-  margin: 10px;
+  margin: 0px;
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
   transition: background 0.3s;
 }
 
 .portfolio-display .button:hover {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-display .button:active {
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
 .portfolio-display .button-group {
-  margin: 20px 0;
+  margin: 5px 0;
   text-align: center;
 }
 
@@ -33,27 +45,23 @@
   clear: both;
 }
 
-.portfolio-display .article
-{
+/* .portfolio-display .article {
   background: blue;
-}
-
+} */
 
 .portfolio-display img {
   vertical-align: middle;
-    border-radius: 1rem;
-  
+  border-radius: 1rem;
 }
 
 .portfolio-display .img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
-
 }
 
 .portfolio-display .grid article {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
   display: block;
   float: left;
   margin: 1%;
@@ -61,19 +69,39 @@
 }
 
 @media (max-width: 1024px) {
-  .grid article {
+  .portfolio-display .grid article {
     width: 31.3%;
   }
 }
 
+.portfolio-display {
+  display: block;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+
+  width: 85%;
+  /* Set the width to 80% of the webpage *******/
+  margin: 0 auto;
+  /* Center the container horizontally */
+
+
+  justify-content: center;
+  /* Center items vertically within the container */
+  align-items: center;
+  /* Center items horizontally within the container */
+
+}
+
 @media (max-width: 767px) {
-  .grid article {
+  .portfolio-display .grid article {
     width: 48%;
   }
 }
 
 @media (max-width: 479px) {
-  .grid article {
+  .portfolio-display .grid article {
     margin: 2% 0;
     width: 100%;
   }

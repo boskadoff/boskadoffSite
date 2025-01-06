@@ -29,6 +29,8 @@ h1 {
     margin: 0px 0px 30px 0px;
 }
 
+
+
 /* Index Page h1 style, replace with .readAreaFlexBox h1 if want to revert */
 #intro {
     font-weight: 1000px;
@@ -137,7 +139,8 @@ header {
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    padding: 26px 250px 0px 250px;   /*Positoning of the Menu | 26px originally was 30px*/
+    padding: 2% 15% 0% 15%;   
+    /* Positoning of the Menu | 26px originally was 30px */
 }
 
 /*Sites Bar*/
@@ -310,6 +313,7 @@ img {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-wrap: wrap;
 
 }
 
@@ -320,9 +324,11 @@ img {
     grid-gap: 20px;
     max-width: 80rem;
     margin: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
+    flex-wrap: wrap;
     background-color: white; /* This will be overridden by JS */
     border-radius: 1.3rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -427,7 +433,7 @@ img {
   }
   
   .portfolio-display .button-group {
-    margin: 20px 0;
+    margin: 0px 0px 20px 0px;
     text-align: center;
   }
   
