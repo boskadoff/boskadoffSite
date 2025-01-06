@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- JQuery Come Here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Reusable Header -->
+    <!-- Tutorial Link: https://www.mackenziesoftware.com/2020/06/reuse-navigation-bar-on-multiple-pages.html -->
+    <div id="header-placeholder"></div>
+
+    <script>
+        $.get("/header.html", function (data) {
+            $("#header-placeholder").replaceWith(data);
+        });
+    </script>
+
+    <link rel="stylesheet" href="/elements/cardLinks/cardLinks.css"> 
+
+</head>
+
+<body>
+    <!--Menu-->
+    <header>
+
+        <!-- Reusable Nav Bar -->
+        <div id="nav-placeholder"></div>
+
+        <script>
+            $.get("/navigation.html", function (data) {
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+
+    </header>
+
+    <div class="main-container">
+        <h1>
+            Woah cool thingy woahhh
+        </h1>
+    <div class="readAreaFlexBox">
+    
+        
+    <div class="main-card-link-container">
+        <!-- Picture Section -->
+        
+        <!-- Description Section -->
+        <div class="card-link-description-container">
+
+            <!-- <h1>
+                Title
+            </h1> -->
+            <p>
+                This is a description of the content inside this card. The layout is responsive and adjusts to screen sizes for a consistent, modern appearance.aaThis is a description of the content inside this card. The layout is responsive and adjusts to screen sizes for a consistent, modern appearance.aaThis is a description of the content inside this card. The layout is responsive and adjusts to screen sizes for a consistent, modern appearance.aaThis is a description of the content inside this card. The layout is responsive and adjusts to screen sizes for a consistent, modern appearance.aaThis is a description of the content inside this card. The layout is responsive and adjusts to screen sizes for a consistent, modern appearance.aaThis is a description of the content inside this card. The layout is responsive and adjusts to screen sizes for a consistent, modern appearance.aa
+            </p>
+        </div>
+    </div>
+    </div>
+    <!-- </div> -->
+</div>
+
+</body>
+
+</html>

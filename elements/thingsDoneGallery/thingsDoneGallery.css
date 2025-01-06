@@ -13,24 +13,26 @@
 .portfolio-display .button {
   display: inline-block;
   padding: 0.5em 1.0em;
-  border-radius: 4px;
+  border-radius: 20rem;
   /* background: #ffffff; */
-  font-family: sans-serif;
+  font-family: var(--anonPro);
+  list-style-type: none;
   font-size: 16px;
   cursor: pointer;
-  border: 1px solid #000000;
-  margin: 0px;
-  -webkit-transition: background 0.3s;
-  -moz-transition: background 0.3s;
-  transition: background 0.3s;
+  border: .2rem solid #400a0a;
+  background: rgb(221, 153, 97);
+  margin: .1rem;
+  margin-top: .9rem;
+
+
 }
 
 .portfolio-display .button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(73, 0, 52);
 }
 
 .portfolio-display .button:active {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(49, 0, 0);
   outline: none;
 }
 

@@ -1,0 +1,45 @@
+
+/* Main Container Styling */
+.main-card-link-container {
+    background: white;
+    border-radius: 16px;
+    width: 50%; /* Responsive width */
+    max-width: 50%; /* Maximum width */
+  min-width: 20%; /* Maximum width */
+    margin-top: 2rem;
+    overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+h1
+{
+    margin-bottom: 0%;
+}
+
+/* Description Container */
+.card-link-description-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.card-link-description-container p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  text-align: left;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 767px) {
+    .main-card-link-container {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .card-link-description-container p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .picture-container {
+        height: 150px; /* Adjust height of picture container for smaller screens */
+    }
+}

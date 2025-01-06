@@ -42,7 +42,7 @@ h1 {
 .readAreaFlexBox h2 {
     color: #423333;
     font-size: 50px;
-    margin: 10px;
+    margin: 2rem;
 }
 
 /* End Working */
@@ -191,6 +191,7 @@ div li {
     height: 100%;
     width: 100%;
     margin: 0;
+    
 
 }
 
@@ -226,7 +227,8 @@ div li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    align-content: center;
 }
 
 img {
@@ -494,3 +496,6 @@ img {
   
 
   /* End portfoliof sention */
+
+
+  /* PROJECT CARDS */
