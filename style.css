@@ -192,6 +192,7 @@ div li {
     width: 100%;
     margin: 0;
     
+    
 
 }
 
@@ -201,7 +202,6 @@ div li {
     /*padding: 0px 100px;*/
     justify-content: center;
     align-items: center;
-    user-select: none;
 }
 
 .flexBoxLeft {
@@ -313,7 +313,7 @@ img {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
     flex-wrap: wrap;
 
@@ -327,13 +327,16 @@ img {
     max-width: 80rem;
     margin: 20px;
     flex-wrap: wrap;
+
+  
+
 }
 
 .card {
     flex-wrap: wrap;
     background-color: white; /* This will be overridden by JS */
     border-radius: 1.3rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     padding: 20px;
     text-align: center;
     display: flex;
@@ -343,19 +346,20 @@ img {
     text-decoration: none; /* Remove underline from links */
     color: inherit; /* Inherit text color */
     transition: transform 0.2s;
+      
 }
 
 .card h2 {
     margin: 0;
     font-size: 20px;
-    color: black;
+    color: rgb(255, 235, 229);
     font-weight: bold;
 }
 
 .card p {
     margin: 5px 0 0;
     font-size: 14px;
-    color: grey;
+    color: rgba(65, 0, 54, 0.422);
 }
 
 .card:hover {

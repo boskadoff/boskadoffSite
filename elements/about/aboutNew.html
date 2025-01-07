@@ -2,7 +2,10 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/elements/about/aboutNew.css"> 
+  
+ <!-- JQuery Come Here -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 
      <!-- Angled Fat Spicy Font -->
  <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
@@ -10,12 +13,20 @@
  <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'> 
  <!-- Elegant Normal Font -->
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> 
+
+<script>
+  $.get("/header.html", function (data) {
+      $("#header-placeholder").replaceWith(data);
+  });
+</script>
+
+
+<link rel="stylesheet" href="/elements/about/aboutNew.css"> 
 </head>
 
 
 <body>
-      <!-- JQuery Come Here -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
     <header>
 
    <!-- Reusable Nav Bar -->
@@ -25,7 +36,11 @@
        $.get("/navigation.html", function (data) {
            $("#nav-placeholder").replaceWith(data);
        });
+      
    </script>
+   </header>
+
+      
 
 </header>
 <div class="main-container">

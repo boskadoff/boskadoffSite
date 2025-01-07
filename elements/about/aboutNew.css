@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 :root {
-  --text: hsla(247, 57%, 91%, 1);
+  --text: rgb(109, 76, 49);
   --text_light: hsla(247, 57%, 91%, 0.9);
   --text_dark: hsla(247, 57%, 91%, 0.5);
   --background: rgb(20, 21, 20);
@@ -30,6 +30,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+   text-align: left !important; 
 }
 
 
@@ -44,6 +45,8 @@ h7 {
   font-weight: 800;
   line-height: 1;
   color: var(--text);
+  text-align: left;
+  
 }
 
 html {
@@ -82,6 +85,7 @@ h6 {
 
 h7 {
   font-size: 7rem;
+  text-align: left;
 }
 
 p {
@@ -124,6 +128,11 @@ body {
   font-family: "DM Sans";
   font-weight: 400;
   background-color: blanchedalmond;
+}
+
+img
+{
+  max-width: 100%;
 }
 
 /*gap between sections */

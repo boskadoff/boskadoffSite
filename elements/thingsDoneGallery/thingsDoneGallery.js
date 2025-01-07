@@ -14,3 +14,4 @@ $(window).bind("load", function() {
 });
 
 console.log('JavaScript file is successfully executed.');
+
