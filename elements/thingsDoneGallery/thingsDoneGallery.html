@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <title>Responsive Gallery</title>
  
-
+    <!-- WHY THE STACKING ERROR IS OCCURING
+  the isotope and jquery stuff is not exdcuted when page first loaded, and it cant run some code it needs to (blog.js?). when the page is reloaded, previously loaded isotope and jquery work.
+-->
   <!-- SCRIPTS -->
   <!-- Load jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Load Isotope -->
-  <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js" ></script>
   <!-- Your JavaScript file -->
   <script src="/elements/thingsDoneGallery/thingsDoneGallery.js"></script>
 
@@ -24,9 +26,11 @@
       $.get("/header.html", function (data) {
           $("#header-placeholder").replaceWith(data);
       });
+
+      
   </script>
 
-<link rel="stylesheet" href="/elements/thingsDoneGallery/thingsDoneGallery.css">
+   <link rel="stylesheet" href="/elements/thingsDoneGallery/thingsDoneGallery.css">
 
 
 </head>
