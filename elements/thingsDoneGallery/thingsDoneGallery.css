@@ -12,7 +12,8 @@
 
 .portfolio-display .button {
   display: inline-block;
-  padding: 0.5em 1.0em;
+  padding: 0.5em 1.0em; 
+  /* changed 0.7 -->0.5em */
   border-radius: 20rem;
   /* background: #ffffff; */
   font-family: var(--anonPro);
@@ -37,7 +38,7 @@
 }
 
 .portfolio-display .button-group {
-  margin: 5px 0;
+  margin: 5px 0px 10px 0px;   /*button box margins, changed 10px from 5px*/
   text-align: center;
 }
 
@@ -62,12 +63,23 @@
   height: auto;
 }
 
+/* CLICKABLE BORDER STYLE------------------------------------- */
+.portfolio-display .clickable { 
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  border: 4px dotted rgb(46, 147, 178);
+}
+
 .portfolio-display .grid article {
   /* background-color: #FFFFFF; */
   display: block;
   float: left;
-  margin: 1%;
-  width: 23%;
+  margin: .8%; /*MARGIN between images, was 1 %*/
+  width: 23%;  /* image size, but not margin size*/
+
+  /* 23 */
 }
 
 @media (max-width: 1024px) {

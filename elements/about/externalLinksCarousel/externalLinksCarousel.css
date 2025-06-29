@@ -1,0 +1,76 @@
+@import "https://unpkg.com/open-props" layer(design.system);
+
+@keyframes slide-fade-in {
+	from {
+		opacity: 0;
+		box-shadow: none;
+		transform: scale(.8) translateY(15vh);
+	}
+}
+
+@layer demo {
+	.jcard {
+		@media (prefers-reduced-motion: no-preference) {
+			view-timeline-name: --item-timeline;
+			animation: slide-fade-in both;
+			animation-timeline: --item-timeline;
+			animation-range: contain 0% contain 50%;
+		}
+	}
+}
+
+#externalLinksCarouselComponent * {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#externalLinksCarouselComponent html {
+	block-size: 100%;
+	background: var(--surface-3);
+}
+
+#externalLinksCarouselComponent body {
+	min-block-size: 100%;
+	font-family: system-ui, sans-serif;
+	display: grid;
+	place-content: center;
+	padding-block: 30dvh;
+}
+
+.jcards {
+	display: grid;
+	text-wrap: wrap;
+	gap: var(--size-3);
+	grid-auto-flow: dense;
+	grid-template-columns: repeat(4, var(--size-content-1));
+}
+
+.jcards > a.jcard {
+	background: red;
+	border-radius: var(--radius-3);
+	box-shadow: var(--shadow-3);
+	line-height: 3;
+	padding-top: var(--size-1);
+	font-size: var(--font-size-4);
+	font-weight: var(--font-weight-6);
+	font-family: var(--font-mono);
+	display: grid;
+	place-content: center;
+	color: inherit;
+	text-decoration: none;
+}
+
+.jcards > a.jcard:nth-of-type(4n) {
+	grid-row: span 2;
+	background: yellow;
+}
+
+.jcards > a.jcard:nth-of-type(7n) {
+	grid-row: span 3;
+	background: green;
+}
+
+.jcards > a.jcard:nth-of-type(5n) {
+	grid-column: span 2;
+	background: cyan;
+}

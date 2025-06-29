@@ -10,10 +10,12 @@
     <div id="header-placeholder"></div>
 
     <script>
-        $.get("/header.html", function (data) {
+        $.get("header.html", function (data) {
             $("#header-placeholder").replaceWith(data);
         });
     </script>
+
+    
 
 
 
@@ -27,7 +29,7 @@
         <div id="nav-placeholder"></div>
 
         <script>
-            $.get("/navigation.html", function (data) {
+            $.get("navigation.html", function (data) {
                 $("#nav-placeholder").replaceWith(data);
             });
         </script>
@@ -48,6 +50,8 @@
                 <h1 class id="intro">
                     Hi OwO
                 </h1>
+
+                
 
                 <!-- wheat
                 <div id="wheat"></div>
