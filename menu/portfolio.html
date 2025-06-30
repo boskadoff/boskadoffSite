@@ -10,7 +10,7 @@
     <div id="header-placeholder"></div>
 
     <script>
-        $.get("/header.html", function (data) {
+        $.get("../header.html", function (data) {
             $("#header-placeholder").replaceWith(data);
         });
     </script>
@@ -27,7 +27,7 @@
         <div id="nav-placeholder"></div>
 
         <script>
-            $.get("/navigation.html", function (data) {
+            $.get("../navigation.html", function (data) {
                 $("#nav-placeholder").replaceWith(data);
             });
         </script>
@@ -47,7 +47,7 @@
     <div id="thingsDoneGallery-placeholder"></div> <!--TO FIX: 1) assign specific class to all thingsDoneGallery Css, it may be interfeeing with the other css in parent css. 2) get rid of the pointer and hardcode into the portfolio page, the Javascript pointer may be ruining it. Its just not seeing the css code when pointed for some reason. Independent live server of the element html file works fine... -->
 
                 <script>
-                    $.get("/elements/thingsDoneGallery/thingsDoneGallery.html", function (data) {
+                    $.get("../elements/thingsDoneGallery/thingsDoneGallery.html", function (data) {
                         $("#thingsDoneGallery-placeholder").replaceWith(data);
                     });
                 </script>

@@ -7,15 +7,23 @@
 
     <!-- Reusable Header -->
     <!-- Tutorial Link: https://www.mackenziesoftware.com/2020/06/reuse-navigation-bar-on-multiple-pages.html -->
-    <div id="header-placeholder"></div>
 
-    <script>
-        $.get("header.html", function (data) {
-            $("#header-placeholder").replaceWith(data);
-        });
-    </script>
 
-    
+<div id="header-placeholder"></div>
+
+<script>
+	$.get("header.html", function (data) {
+		$("#header-placeholder").replaceWith(data);
+
+		// Now load JS and CSS manually
+		$("<link>", {
+			rel: "stylesheet",
+			type: "text/css",
+			href: "style.css"
+		}).appendTo("head");
+
+	});
+</script>
 
 
 

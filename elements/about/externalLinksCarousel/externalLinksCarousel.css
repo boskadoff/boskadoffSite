@@ -46,9 +46,9 @@
 }
 
 .jcards > a.jcard {
-	background: red;
+	background: #ffb6a3;
 	border-radius: var(--radius-3);
-	box-shadow: var(--shadow-3);
+	/* box-shadow: var(--shadow-3); */
 	line-height: 3;
 	padding-top: var(--size-1);
 	font-size: var(--font-size-4);
@@ -62,15 +62,15 @@
 
 .jcards > a.jcard:nth-of-type(4n) {
 	grid-row: span 2;
-	background: yellow;
+	background: #f0bc68;
 }
 
 .jcards > a.jcard:nth-of-type(7n) {
 	grid-row: span 3;
-	background: green;
+	background: #5f9595;
 }
 
 .jcards > a.jcard:nth-of-type(5n) {
 	grid-column: span 2;
-	background: cyan;
+	background: #aab8bb;
 }
