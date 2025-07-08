@@ -73,7 +73,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.333rem;
+  font-size: 1.333rem; 
   color: var(--text_light);
   line-height: 1.5rem;
   color: rgb(71, 36, 36);
@@ -87,7 +87,8 @@ h8 {
 }
 
 h6 {
-      font-size: 1.5rem;
+      /* font-size: 1.5rem; */
+      font-size: 1.2rem;
     color: var(--text_light);
     line-height: 1.2rem;
     color: #cc4b2a;

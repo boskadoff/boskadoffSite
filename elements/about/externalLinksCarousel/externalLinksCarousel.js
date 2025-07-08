@@ -9,7 +9,6 @@ const items = [
 	{ name: "lamy", url: "https://adrienlamy.fr/" },
 		{ name: "shar", url: "https://www.sharyap.com/" },
 	{ name: "crazeddd", url: "https://crazeddd.dev/" },
-  { name: "nerdy", url: "https://nerdy.dev" },
   { name: "deadly comics", url: "https://deadlycomics.com" },
 	{ name: "codepen", url: "https://codepen.com" },
 	{ name: "joshwcomeau", url: "https://www.joshwcomeau.com/" },
